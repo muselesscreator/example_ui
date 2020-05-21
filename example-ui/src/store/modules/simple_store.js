@@ -33,4 +33,5 @@ export const reducer = mkReducer(
 
 export const selectors = StrictDict({
   ...simpleSelectors(initialState),
+  numRolls: ({ rolls }) => rolls.length,
 });

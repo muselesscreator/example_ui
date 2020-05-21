@@ -13,15 +13,15 @@ import './RollsList.scss';
  * Provides a formatted list of roll strings, with a button at the bottom
  * allowing the user to clear all registered rolls.
  */
-export const RollsList = ({ clearRolls, rolls }) =>
+export const RollsList = ({ clearRolls, rolls, maxRoll, numRolls }) =>
   <div className="rolls-list">
     <div className="rolls-container">
       { rolls.map((roll, index) => (
         <div className="roll-entry" key={index}>
-          { roll }
+          {roll}
         </div>
       )) }
-
+      Number of Rolls: {numRolls}
     </div>
     <div className="action-bar">
       <Button
@@ -42,6 +42,7 @@ RollsList.propTypes = {
 
 export const mapStateToProps = (state) => ({
   rolls: selectors.simple_store.rolls(state),
+  numRolls: selectors.simple_store.numRolls(state),
 });
 
 export const mapDispatchToProps = {

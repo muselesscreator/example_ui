@@ -179,5 +179,9 @@
     "jest-canvas-mock": "^1.1.0",
     "jsdoc": "^3.5.5",
     "react-scripts": "^2.1.5"
+  },
+  "resolutions": {
+    "fsevents": "1.2.9",
+    "**/fsevents": "1.2.9"
   }
 }
