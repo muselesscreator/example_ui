@@ -1,0 +1,15 @@
+@import '../../scss/variables.scss';
+
+.ui.popup.brw-hint {
+  background-color: $panel-main;
+  border-color: $panel-v-light;
+  color: $heading-color;
+  z-index: 4000;                // above modals @ 2001
+}
+
+.ui.top.popup.brw-hint:before {
+  // This is the little outdent v at the bottom of the popup, which
+  // Semantic-UI renders as a 45 degree rotated square:
+  background-color: $panel-main !important;
+  box-shadow: 1px 1px 0 0 $panel-v-light;
+}

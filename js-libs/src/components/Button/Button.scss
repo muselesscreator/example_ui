@@ -1,0 +1,76 @@
+@import "../../scss/variables.scss";
+@import "../../scss/colors.scss";
+
+.ui.button.brw-btn {
+  position: relative;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+
+  font-size: 14px !important;
+  font-weight: normal !important;
+  text-shadow: none !important;
+
+  color: $dark_grey_50;
+  background-color: $primary_30; 
+  border: none !important;
+  border-radius: 0px !important;
+
+  &::before {
+    height: 42px;
+  }
+  &:hover {
+    color: $dark_grey_70;
+    background-color: $primary_40;
+    &.dark {
+      background-color: $primary_40;
+    }
+  }
+  &.active {
+    color: $dark_grey_70;
+    background-color: $primary_40;
+    &.dark {
+      background-color: $primary_40;
+    }
+  }
+
+  &:focus::after {
+      content: "";
+      outline: 1px solid $primary_20;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+  }
+  &.disabled {
+    background-color: $light_grey_50 !important;
+    color: $light_grey_80 !important;
+    opacity: 1 !important;
+  }
+  &.secondary {
+    &:focus::after {
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        left: -2px;
+        top: -2px;
+    }
+    background-color: transparent;
+    color: $dark_grey_50;
+    border: solid 1px $light_grey_50 !important;
+    height: 38px;
+    &:hover {
+      background-color: $light_grey_30;
+    }
+    &.active {
+      background-color: $light_grey_40;
+      color: $dark_grey_70;
+    }
+  }
+  &.danger {
+    color: $light_grey_20;
+    background-color: $red_40;
+    &:hover {
+      color: $red_50;
+    }
+  }
+}

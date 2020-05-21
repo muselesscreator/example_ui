@@ -1,0 +1,42 @@
+@import "../../scss/variables.scss";
+
+.brw-content-pane {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  right: 0px;
+  bottom: 0px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: $panel-main;
+  .brw-content-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    bottom: 0px;
+    background-color: $panel-main;
+    border-right: 1px solid $panel-med-dark;
+    padding: 15px;
+    overflow-y: auto;
+  }
+
+  .brw-contents-wrapper {
+    position: absolute;
+    padding: 15px;
+    left: 300px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+
+    .brw-content-contents {
+      display: flex;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RollsList component Component :smoke test 1`] = `
+<div
+  className="rolls-list"
+>
+  <div
+    className="rolls-container"
+  >
+    <div
+      className="roll-entry"
+      key="0"
+    >
+      some
+    </div>
+    <div
+      className="roll-entry"
+      key="1"
+    >
+      rolls
+    </div>
+  </div>
+  <div
+    className="action-bar"
+  >
+    <Button
+      className="clear-rolls-btn"
+      onClick={[MockFunction clearRolls]}
+    >
+      Clear
+    </Button>
+  </div>
+</div>
+`;

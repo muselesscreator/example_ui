@@ -1,0 +1,31 @@
+@import "../../scss/colors.scss";
+
+.brw-input {
+  color: black !important;
+  opacity: 1 !important;
+  display: inline-block;
+  &.disabled input{
+    opacity: 0.45 !important;
+  }
+  input {
+    height: 40px !important;
+    width: 320px !important;
+    border: solid 1px $light_grey_30;
+    border-radius: 0px;
+    border-bottom-color: #5b8dac;
+    border-width-bottom: 2px;
+  }
+
+  &.dark {
+    input {
+      background-color: #31333d !important;
+      border: 1px solid #595d66 !important;
+      color: white !important;
+    }
+    .label {
+      background-color: #484d59 !important;
+      border: 1px solid #595d66 !important;
+      color: white !important;
+    }
+  }
+}

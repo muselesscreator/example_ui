@@ -1,0 +1,11 @@
+.user-plaque {
+  display: inline-block;
+  .avatar.icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 1px white;
+  }
+}

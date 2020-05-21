@@ -1,0 +1,97 @@
+@import "./text.scss";
+@import "./variables.scss";
+@import "js-libs/src/scss/colors.scss";
+
+body {
+  -webkit-text-size-adjust: none;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  .modal, .ui.modal.argus-modal-btn {
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    position: relative;
+    text-align: center;
+    height: auto;
+    .header {
+      text-align: left;
+    }
+  }
+  .ui.label {
+    background-color: #484d59 !important;
+    border: 1px solid #595d66 !important;
+    color: white !important;
+  }
+  .ui.dimmer {
+    z-index: 2000 !important;
+    .modal {
+      z-index: 2001 !important;
+    }
+  }
+  textarea {
+    background-color: #31333d !important;
+    color: white !important;
+  }
+  .ui.progress {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 16px;
+    height: 24px;
+    border-radius: 0px;
+    background-color: $light_grey_30;
+    .bar {
+      background-color: #18940b;
+      min-width: 0px !important;
+    }
+    display: inline-block;
+  }
+
+  .ui.modal {
+    width: 520px;
+    height: 308px;
+    .header {
+      font-size: 24px;
+      i {
+        color: $red_30;
+        font-size: 30px;
+      }
+      color: #c8282e;
+      border: none;
+    }
+    .content {
+      font-size: 20px;
+      line-height: 1.4;
+      color: $dark_grey_50;
+    }
+    .actions {
+      position: absolute;
+      bottom: 0px;
+      padding: 0px;
+      width: 100%;
+      .button {
+        width: 50%;
+        margin: 0px;
+        height: 60px;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 16px !important;
+        color: $dark_grey_50;
+        position: absolute;
+        &.cancel-btn {
+          background-color: $light_grey_20;
+          left: 0px;
+          bottom: 0px;
+        }
+        &.confirm-btn {
+          right: 0px;
+          bottom: 0px;
+        }
+      }
+    }
+    
+  }
+
+  .ui.brw-btn.button:after {
+    outline: none !important;
+  }
+}

@@ -1,0 +1,44 @@
+@import "js-libs/src/scss/colors.scss";
+
+#root {
+  width: 1920px;
+  height: 1080px;
+  max-width: 1920px;
+  max-height: 1080px;
+  position: absolute;
+  #wrapper {
+    #header {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      height: 60px;
+      background-color: $dark_grey_50;
+      img.logo-img {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 20;
+      }
+      .title {
+        color: $light_grey_20;
+        font-size: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 20px;
+      }
+    }
+
+    #footer {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      height: 60px;
+      background-color: $dark_grey_50;
+    }
+  }
+}

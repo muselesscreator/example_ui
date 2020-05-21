@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DiceRoller component Component :smoke test 1`] = `
+<div
+  className="dice-roller-view"
+>
+  <div
+    className="dice-container"
+  >
+    <DieControl
+      type="d4"
+    />
+    <DieControl
+      type="d6"
+    />
+    <DieControl
+      type="d8"
+    />
+    <DieControl
+      type="d10"
+    />
+    <br />
+    <DieControl
+      type="d12"
+    />
+    <DieControl
+      type="d20"
+    />
+    <DieControl
+      type="d100"
+    />
+  </div>
+  <RollsList />
+</div>
+`;

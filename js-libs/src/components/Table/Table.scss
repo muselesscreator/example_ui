@@ -1,0 +1,35 @@
+@import "../../scss/colors.scss";
+
+.ui.table.brw-table{
+  font-size: 14px;
+  .input {
+    width: 100% !important;
+    margin-bottom: 2px;
+    padding: 0px;
+    input {
+      height: 20px !important;
+    }
+  }
+  thead th {
+    background-color: $light_grey_30;
+    color: black !important;
+    font-weight: normal;
+    padding: 5px;
+  }
+  tbody {
+    tr {
+      background-color: white;
+      color: black !important;
+      outline: 1px solid $light_grey_30 !important;
+      letter-spacing: 0.25px;
+      height: 20px;
+      .light-input input {
+        border: none !important;
+      }
+      td {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+    }
+  }
+}
