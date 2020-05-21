@@ -1,5 +1,6 @@
 # UI Package
 This package wraps a JS User Interface, with its library requirements.
+This serves as example of component library and namespaced redux useage.
 
 ## To Install
 install yarn packages at root repo level
