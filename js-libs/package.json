@@ -43,7 +43,7 @@
     "mini-css-extract-plugin": "0.4.3",
     "moment": "^2.22.2",
     "mousetrap": "^1.6.3",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "object-assign": "4.1.1",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.1.0",
